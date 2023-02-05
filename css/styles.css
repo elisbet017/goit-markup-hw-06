@@ -1,8 +1,8 @@
 body {
-  font-family: "Roboto", sans-serif;
-  color: var(--dark-color);
   background: var(--light-light-color);
+  color: var(--dark-color);
   font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
 *,
@@ -51,22 +51,22 @@ img {
 /* LOGO */
 
 .logo {
-  font-family: "Raleway";
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
   padding-top: 24px;
   padding-bottom: 24px;
+  font-weight: 800;
+  font-size: 18px;
+  font-family: "Raleway";
+  line-height: 1.33;
 }
 
 .logo-color-header {
-  text-transform: uppercase;
   color: var(--dark-color);
+  text-transform: uppercase;
 }
 
 .logo-color {
-  text-transform: uppercase;
   color: var(--hover-color);
+  text-transform: uppercase;
 }
 
 .logo-color-footer {
@@ -81,15 +81,15 @@ img {
 
 .hidden-title {
   position: absolute;
-  white-space: nowrap;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
   margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(50%);
 }
 
 .section {
@@ -98,10 +98,10 @@ img {
 
 .container {
   width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .site-header {
@@ -124,12 +124,12 @@ img {
 }
 
 .site-nav-link {
-  font-weight: 500;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: inherit;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 24px;
-  padding-top: 24px;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -148,15 +148,15 @@ img {
 }
 
 .active::after {
-  position: absolute;
-  left: 0;
-  top: 45px;
   content: "";
+  position: absolute;
+  top: 45px;
+  left: 0;
   display: inline-block;
   width: 100%;
   height: 4px;
-  background: var(--focus-color);
   border-radius: 2px;
+  background: var(--focus-color);
 }
 
 .contact-list {
@@ -169,8 +169,8 @@ img {
 }
 
 .contact-link {
-  padding-bottom: 24px;
   padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .contact-link {
@@ -192,22 +192,22 @@ img {
   max-width: 1440px;
   margin: 0 auto;
   padding: 188px 0;
-  text-align: center;
   background: var(--dark-color);
 
   background-image: var(--gradient), url("../images/people-office.jpg");
-  background-repeat: no-repeat;
   background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .hero-title {
   width: 500px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  color: var(--light-light-color);
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: var(--light-light-color);
-  margin: 0 auto;
-  margin-bottom: 48px;
 }
 
 .hero-content {
@@ -221,20 +221,20 @@ img {
 /* BUTTONS */
 
 .hero-btn {
-  border: none;
   width: 169px;
   height: 56px;
-
-  cursor: pointer;
-  font-family: inherit;
-  background: var(--hover-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
+  background: var(--hover-color);
+  color: var(--light-light-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 500;
   font-size: inherit;
+  font-family: inherit;
   line-height: 1.19;
   letter-spacing: 0.04em;
-  color: var(--light-light-color);
+
+  cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -256,16 +256,16 @@ img {
 
 .our-portfolio-btn {
   padding: 12px 24px;
-
-  font-family: inherit;
-  cursor: pointer;
-  background: var(--light-color);
   border: 1px solid var(--accent-color);
   border-radius: 4px;
+  background: var(--light-color);
+  color: var(--hover-color);
   font-weight: 500;
   font-size: inherit;
+
+  font-family: inherit;
   line-height: 1.5;
-  color: var(--hover-color);
+  cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -275,9 +275,9 @@ img {
 .our-portfolio-btn:hover,
 .our-portfolio-btn:focus {
   background-color: var(--focus-color);
+  color: var(--light-light-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  color: var(--light-light-color);
 }
 
 .our-features {
@@ -297,13 +297,13 @@ img {
 }
 
 .icon-wrap {
-  height: 112px;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--light-color);
+  width: 100%;
+  height: 112px;
   border-radius: 4px;
+  background-color: var(--light-color);
 }
 
 .our-features-subtitle {
@@ -334,8 +334,8 @@ img {
 }
 
 .our-team-item {
-  background: var(--light-light-color);
   border-radius: 4px;
+  background: var(--light-light-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -360,14 +360,14 @@ img {
 }
 
 .card-content {
-  text-align: center;
   padding: 32px 16px;
+  text-align: center;
 }
 
 .our-team-soc-list {
   display: flex;
-  justify-content: center;
   gap: 24px;
+  justify-content: center;
   margin-top: 8px;
 }
 
@@ -377,13 +377,13 @@ img {
 }
 
 .our-team-soc-link {
-  background-color: var(--hover-color);
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--hover-color);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -394,8 +394,8 @@ img {
 
 .customers-list {
   display: flex;
-  margin-top: 72px;
   gap: 24px;
+  margin-top: 72px;
 }
 
 .customers-item {
@@ -406,13 +406,13 @@ img {
 /* fill: #8e8f99; */
 
 .customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   fill: #8e8f99;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -431,24 +431,24 @@ img {
 }
 
 .section-title {
-  text-align: center;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
   text-transform: capitalize;
 }
 
 .section-subtitle {
-  font-size: 20px;
   font-weight: 500;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
 .section-text {
+  color: var(--text-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-color);
 }
 
 .our-portfolio-list-btn {
@@ -464,8 +464,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
-  column-gap: 24px;
   margin-top: 72px;
+  column-gap: 24px;
 }
 
 .portfolio-card {
@@ -492,15 +492,15 @@ img {
   top: 0;
   left: 0;
   overflow: auto;
-  padding-top: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
   width: 100%;
   height: 100%;
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-left: 32px;
   background-color: var(--hover-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover-text {
@@ -552,9 +552,9 @@ img {
 }
 
 .footer-text {
-  color: var(--accent-color);
   width: 264px;
   margin-top: 16px;
+  color: var(--accent-color);
 }
 
 .footer-wrap {
@@ -567,10 +567,10 @@ img {
 }
 
 .footer-soc-text {
+  color: #ffffff;
   font-weight: 500;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
-  color: #ffffff;
 }
 
 .footer-soc-list {
@@ -585,13 +585,13 @@ img {
 }
 
 .footer-soc-link {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -606,28 +606,28 @@ img {
 
 .footer-form {
   display: flex;
-  margin-top: 16px;
   gap: 24px;
+  margin-top: 16px;
 }
 
 .footer-subscribe {
   width: 264px;
   height: 40px;
   padding: 8px 16px;
-  background-color: var(--dark-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  background-color: var(--dark-color);
   color: var(--light-light-color);
-  font-size: 14px;
   outline: transparent;
+  font-size: 14px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe::placeholder {
+  color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-subscribe:focus {
@@ -651,13 +651,13 @@ img {
   width: 165px;
   height: 40px;
   padding: 8px 64px 8px 24px;
-  background: var(--hover-color);
-  border-radius: 4px;
   border: none;
+  border-radius: 4px;
+  background: var(--hover-color);
+  color: #ffffff;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -699,27 +699,27 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transition: transform;
-  transform: translate(-50%, -50%);
   width: 408px;
   min-height: 576px;
   padding: 72px 24px 24px;
+  border-radius: 4px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  transition: transform;
+  transform: translate(-50%, -50%);
 }
 
 .modal-close {
   position: absolute;
   top: 24px;
   right: 24px;
+  display: block;
   width: 24px;
   height: 24px;
-  background-color: var(--accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  display: block;
+  background-color: var(--accent-color);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -730,8 +730,8 @@ img {
 }
 
 .modal-close:is(:hover, :focus) {
-  background-color: var(--focus-color);
   border: none;
+  background-color: var(--focus-color);
 }
 
 .modal-close:is(:hover, :focus) .close-icon {
@@ -739,11 +739,10 @@ img {
 }
 
 .modal-title {
+  color: var(--dark-color);
   font-weight: 500;
   line-height: 1.5;
-  text-align: center;
   letter-spacing: 0.02em;
-  color: var(--dark-color);
   text-align: center;
 }
 
@@ -768,10 +767,10 @@ img {
 }
 
 .modal-label {
+  color: var(--subtle-color);
   font-size: 12px;
   line-height: calc(16px / 12px);
   letter-spacing: 0.04em;
-  color: var(--subtle-color);
 }
 
 .input-wrap {
@@ -781,13 +780,13 @@ img {
 
 .modal-input {
   width: 100%;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
   height: 40px;
   padding: 8px 38px;
-  font-size: 14px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   color: #2e2f42;
   outline: transparent;
+  font-size: 14px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -807,9 +806,9 @@ img {
   position: absolute;
   top: 50%;
   left: 16px;
-  transform: translateY(-50%);
   fill: var(--dark-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-50%);
 }
 
 .comment {
@@ -820,26 +819,26 @@ img {
 }
 
 .comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
-  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-check:checked + .check-text::before {
-  background-color: var(--focus-color);
   border: none;
+  background-color: var(--focus-color);
   background-image: url(../images/tick.svg);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .check-text {
+  display: flex;
+  color: #757575;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
-  color: #757575;
-  display: flex;
   cursor: pointer;
 }
 
@@ -847,38 +846,38 @@ img {
   content: " ";
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   border: 1.25px solid var(--dark-color);
   border-radius: 2px;
-  margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-link {
-  color: var(--hover-color);
   margin-left: 3px;
+  color: var(--hover-color);
 }
 
 .modal-button {
-  width: 100%;
   display: flex;
   justify-content: center;
+  width: 100%;
   margin-top: 24px;
 }
 
 .modal-btn {
-  padding: 16px 32px;
   width: 169px;
   height: 56px;
-  background: var(--hover-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  padding: 16px 32px;
   border: none;
+  border-radius: 4px;
+  background: var(--hover-color);
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
   cursor: pointer;
 }
